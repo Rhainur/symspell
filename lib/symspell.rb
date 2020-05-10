@@ -151,7 +151,7 @@ class SymSpell
   end
 
   def parse_words(text)
-    text.downcase.scan(/[\w-[\d_]]+/).first
+    text.downcase.scan(/[\w\-[\d_]]+/).first
   end
 
   def create_dictionary_entry(key)
